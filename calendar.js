@@ -12,6 +12,12 @@ function calendar(date){
     month = date.getMonth();
     year = date.getFullYear();
 
+    setDates();
+    return
+}
+
+function setDates(){
+
     console.log("Dzień: " + day + "  Miesiąc: " + month + "  Rok: " + year);
 
     months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
@@ -27,11 +33,13 @@ function calendar(date){
 
     console.log("first day is:  " + first_week_day);
     console.log("Days in this month: " + days_in_this_month);
+
+    createCalendar();
 }
 
 
 function createCalendar() {    
-
+    console.log("GIGABIGA mONTH +++++====="  + month);
     var cellNum =0; //wazne!
     let luty = 5;
     if(days_in_this_month < 29){
@@ -60,6 +68,12 @@ function createCalendar() {
 
 }
 
+function changeMonthOnChange(){
+    console.log("huj");
+    monthChange = months[month];
+    document.getElementById("monthShow").innerHTML = monthChange
+}
+
 function caliAdd(cell){
     console.log('hujjj + ' + cell.id);
     document.getElementById('adder').style.display = "block";
@@ -73,14 +87,30 @@ function addEvent(cell){
 function bob(){document.getElementById('adder').style.display = 'none';}
 
 function monthChangeMinus(){
-    month = month - 1;
+    if(month == 0 ){
+        month = 11;
+        year = year - 1;
+    }
+    else{
+    month = month -  1;
+    }
     console.log("miesiąc po zmianie na MINUS: " + month);
+    document.getElementById("cali").innerHTML=" ";
+    console.log("clen");
+    setDates();
+
 }
 function monthChangePlus(){
+    if(month == 11 ){
+        month = 0;
+        year = year + 1;
+    }
+    else{
     month = month +  1;
+    }
     console.log("miesiąc po zmianie na PLUS: " + month);
     document.getElementById("cali").innerHTML=" ";
     console.log("clen");
-    createCalendar(month);
+    setDates();
 
 }

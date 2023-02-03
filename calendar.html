@@ -14,7 +14,7 @@
     <script src="js.js"></script>
     <script src="calendar.js"></script>
 </head>
-<body onload="calendar(), createCalendar()">
+<body onload="calendar()">
 
     <div class="menu">
         <div class="menuChoice" id="main" onclick="openMain()">Main</div>
@@ -27,10 +27,10 @@
     <div class="calendar">
 
         <div id="monthSelect">
-        <button id="monthChange" id="monthMinus" onclick="monthChangeMinus()" >Minus</button>
-        <button id="monthChange" id="monthPlus" onclick="monthChangePlus()" >Plus</button>
+        <button id="monthChange" id="monthMinus" onclick="monthChangeMinus(), changeMonthOnChange()" >Minus</button>
+        <button id="monthChange" id="monthPlus" onclick="monthChangePlus(), changeMonthOnChange()" >Plus</button>
         </div>
-        <div id="monthShow">Styczeń</div>
+        <div id="monthShow">February</div>
 
 
         <table class="table" id="cali"></table>
