@@ -23,8 +23,7 @@ function openDatabase(){
 }
 
 function plantAdderPhoto(){
-    var plant = document.getElementById('plantChoice').value;
-    zdj = "<img src=\"" + plant + ".jpg\" />"
-    console.log(zdj)
-    document.getElementById("photo").innerHTML = zdj;
+    var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("plantChoice");
+	image.src = dropd.value;	
 }

@@ -131,7 +131,7 @@ table > tbody > tr > td {
     margin: 5px;
     padding: 5px;
     width: 70%;
-    height: 120px;
+    height: auto;
     padding-left: 15px;
     border-style: solid;
     border-radius: 5px;
@@ -149,6 +149,12 @@ table > tbody > tr > td {
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(10, 150, 30);
+}
+
+.imageToSwap{
+    float: left;
+    width: 100px;
+    height: 100px;
 }
 
 .calendar{

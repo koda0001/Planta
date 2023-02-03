@@ -100,6 +100,7 @@ function monthChangeMinus(){
     setDates();
 
 }
+
 function monthChangePlus(){
     if(month == 11 ){
         month = 0;
