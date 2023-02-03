@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <script src="calendar.js"></script>
+</head>
+<body onload="calendar(), createCalendar()">
+    <div class="menu">
+        <div class="menuChoice" id="main" onclick="openMain()">Main</div>
+        <div class="menuChoice" id="calendar" onclick="openCalendar()">Calendar</div>
+        <div class="menuChoice" id="myGarden" onclick="openMyGarden()">My garden</div>
+        <div class="menuChoice" id="database" onclick="openDatabase()">Database</div>
+
+    </div>
+
+    <div class="calendar">
+
+        <div id="monthSelect">
+        <button id="monthChange" id="monthMinus" onclick="monthChangeMinus()" >Minus</button>
+        
+        <button id="monthChange" id="monthPlus" onclick="monthChangePlus()" >Plus</button>
+        </div>
+
+        <table class="table" id="cali"></table>
+    </div>
+
+    <div id="adder" onload="plantAdderPhoto()">
+        <label id='aaa' for="plantChoice">Choose a plant:</label>
+        <select id="plantChoice">
+            <option value="plant1">Plant 1</option>
+            <option value="Plant 2">Plant 2</option>
+            <option value="Plant 3">Plant 3</option>
+            <option value="Plant 4">Plant 4</option>
+        </select>
+        <button id="closeAdder" onclick="bob()">close</button>
+        <div id="description"></div>
+        <div id="photo" scr="'plant'+ a + 'bb'" ></div>
+
+        <button id="adderBtn">add plant</button>
+    </div>
+
+</body>
+</html>
