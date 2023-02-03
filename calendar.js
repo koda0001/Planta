@@ -77,7 +77,10 @@ function monthChangeMinus(){
     console.log("miesiąc po zmianie na MINUS: " + month);
 }
 function monthChangePlus(){
-    month =+ 1;
+    month = month +  1;
     console.log("miesiąc po zmianie na PLUS: " + month);
+    document.getElementById("cali").innerHTML=" ";
+    console.log("clen");
+    createCalendar(month);
 
 }
