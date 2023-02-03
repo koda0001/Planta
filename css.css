@@ -49,16 +49,18 @@ button:active{
 }
 
 .menu{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 50px;
+    background-color: rgb(232, 232, 232);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 70%;
+    height: 90px;
     float: left;
 }
 
 .menuChoice{
     cursor: pointer;
-    float: left;
-    margin: 5px;
+    float: right;
+    margin: 15px;
     padding: 10px;
     padding-left: 15px;
     border-style: solid;
@@ -146,17 +148,22 @@ table > tbody > tr > td {
 }
 
 #monthSelect{
-    width: 70%;
-    height: 120px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
 }
 
 #monthMinus{
     margin: 0;
-    text-align: left;
+    float: left;
 }
 
 #monthPlus{
     margin: 0;
+    float: left;
+}
 
-    text-align: center;
+#monthShow{
+    margin: 0;
+    float: left;
 }
