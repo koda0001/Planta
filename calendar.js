@@ -73,7 +73,7 @@ function addEvent(cell){
 function bob(){document.getElementById('adder').style.display = 'none';}
 
 function monthChangeMinus(){
-    month =- 1;
+    month = month - 1;
     console.log("miesiąc po zmianie na MINUS: " + month);
 }
 function monthChangePlus(){
